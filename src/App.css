@@ -1,0 +1,75 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.move{
+  background-color: red;
+  width: 50px;
+  height: 50px;
+  animation: car-move infinite;
+  position: relative;
+  animation-duration: 1000ms;
+  margin-top: 50px;
+  animation-direction: nomal;
+  animation-timing-function: linear;
+
+}
+@keyframes car-move { 
+  from {top: -300px}
+  to {top: 0px}
+}
+.container{
+  width: 80%;
+  margin: 0% 10% 0% 10%;
+  display: flex;
+  flex-flow: row wrap;
+}
+.left,
+.right{
+  flex: 10%;
+}
+.left{
+  margin-right: -16%;
+  float: left;
+}
+.right{
+  float: right;
+}
+.middle{
+  flex: 80%;
+  background-color: rgb(245, 245, 245);
+  position: relative;
+}
+.middle img{
+  width: 130px;
+  height: 200px;
+  margin-top: 40%;
+  margin-left: 40%;
+  position: absolute;
+}
+
